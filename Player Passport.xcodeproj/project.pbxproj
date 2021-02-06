@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3293CCE125CDCFF4008A1720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3293CCE025CDCFF4008A1720 /* AppDelegate.swift */; };
+		3293CCE325CDCFF4008A1720 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3293CCE225CDCFF4008A1720 /* SceneDelegate.swift */; };
+		3293CCE525CDCFF4008A1720 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3293CCE425CDCFF4008A1720 /* LoginViewController.swift */; };
+		3293CCE825CDCFF4008A1720 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3293CCE625CDCFF4008A1720 /* Main.storyboard */; };
+		3293CCEA25CDCFF6008A1720 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3293CCE925CDCFF6008A1720 /* Assets.xcassets */; };
+		3293CCED25CDCFF6008A1720 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3293CCEB25CDCFF6008A1720 /* LaunchScreen.storyboard */; };
+		3293CCFB25CE19DC008A1720 /* TeamSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3293CCFA25CE19DC008A1720 /* TeamSelectionViewController.swift */; };
+		3293CCFE25CE2030008A1720 /* PlayerSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3293CCFD25CE2030008A1720 /* PlayerSelectionViewController.swift */; };
+		3293CD0225CE220E008A1720 /* PlayerSkillsInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3293CD0125CE220E008A1720 /* PlayerSkillsInputViewController.swift */; };
+		3293CD0525CE225A008A1720 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3293CD0425CE225A008A1720 /* PlayerCell.swift */; };
+		3293CD0825CE2266008A1720 /* SkillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3293CD0725CE2266008A1720 /* SkillCell.swift */; };
+		3293CD0B25CE22DB008A1720 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3293CD0A25CE22DB008A1720 /* UIView+Ext.swift */; };
+		3293CD2625CEB262008A1720 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3293CD2525CEB261008A1720 /* Skill.swift */; };
+		3293CD2925CEB2CD008A1720 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3293CD2825CEB2CD008A1720 /* Player.swift */; };
+		3293CD2E25CEC548008A1720 /* StatsDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3293CD2D25CEC548008A1720 /* StatsDashboardViewController.swift */; };
+		3293CD3725CEC938008A1720 /* VisbyRoundCF-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3293CD3225CEC938008A1720 /* VisbyRoundCF-ExtraBold.otf */; };
+		3293CD3825CEC938008A1720 /* VisbyRoundCF-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3293CD3325CEC938008A1720 /* VisbyRoundCF-Light.otf */; };
+		3293CD3925CEC938008A1720 /* VisbyRoundCF-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3293CD3425CEC938008A1720 /* VisbyRoundCF-Medium.otf */; };
+		3293CD3A25CEC938008A1720 /* VisbyRoundCF-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3293CD3525CEC938008A1720 /* VisbyRoundCF-Bold.otf */; };
+		3293CD3B25CEC938008A1720 /* VisbyRoundCF-DemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3293CD3625CEC938008A1720 /* VisbyRoundCF-DemiBold.otf */; };
+		32A6C87F25CF3A3400454304 /* DFConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6C87E25CF3A3400454304 /* DFConstants.swift */; };
+		32A6C88A25CF464300454304 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6C88925CF464300454304 /* UIViewController+Ext.swift */; };
+		32A6C88F25CF46C400454304 /* DFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6C88E25CF46C400454304 /* DFBodyLabel.swift */; };
+		32A6C89325CF470600454304 /* DFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6C89225CF470600454304 /* DFTitleLabel.swift */; };
+		32A6C89625CF475B00454304 /* DFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6C89525CF475B00454304 /* DFButton.swift */; };
+		32A6C89A25CF480000454304 /* DFDismissAlertPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6C89925CF480000454304 /* DFDismissAlertPopup.swift */; };
+		32A6C89F25CF4BCD00454304 /* DFResetPasswordPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6C89E25CF4BCD00454304 /* DFResetPasswordPopup.swift */; };
+		32A6C8A225CF4BFA00454304 /* DFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6C8A125CF4BFA00454304 /* DFTextField.swift */; };
+		38E5F63EC155AF1AC166BC35 /* Pods_Player_Passport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFEE280A486138CA0A83D1C6 /* Pods_Player_Passport.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3293CCDD25CDCFF4008A1720 /* Player Passport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Player Passport.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3293CCE025CDCFF4008A1720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3293CCE225CDCFF4008A1720 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3293CCE425CDCFF4008A1720 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3293CCE725CDCFF4008A1720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3293CCE925CDCFF6008A1720 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3293CCEC25CDCFF6008A1720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3293CCEE25CDCFF6008A1720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3293CCFA25CE19DC008A1720 /* TeamSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamSelectionViewController.swift; sourceTree = "<group>"; };
+		3293CCFD25CE2030008A1720 /* PlayerSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSelectionViewController.swift; sourceTree = "<group>"; };
+		3293CD0125CE220E008A1720 /* PlayerSkillsInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSkillsInputViewController.swift; sourceTree = "<group>"; };
+		3293CD0425CE225A008A1720 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		3293CD0725CE2266008A1720 /* SkillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillCell.swift; sourceTree = "<group>"; };
+		3293CD0A25CE22DB008A1720 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		3293CD2525CEB261008A1720 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		3293CD2825CEB2CD008A1720 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		3293CD2D25CEC548008A1720 /* StatsDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsDashboardViewController.swift; sourceTree = "<group>"; };
+		3293CD3225CEC938008A1720 /* VisbyRoundCF-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-ExtraBold.otf"; sourceTree = "<group>"; };
+		3293CD3325CEC938008A1720 /* VisbyRoundCF-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Light.otf"; sourceTree = "<group>"; };
+		3293CD3425CEC938008A1720 /* VisbyRoundCF-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Medium.otf"; sourceTree = "<group>"; };
+		3293CD3525CEC938008A1720 /* VisbyRoundCF-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Bold.otf"; sourceTree = "<group>"; };
+		3293CD3625CEC938008A1720 /* VisbyRoundCF-DemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-DemiBold.otf"; sourceTree = "<group>"; };
+		32A6C87E25CF3A3400454304 /* DFConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFConstants.swift; sourceTree = "<group>"; };
+		32A6C88925CF464300454304 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		32A6C88E25CF46C400454304 /* DFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFBodyLabel.swift; sourceTree = "<group>"; };
+		32A6C89225CF470600454304 /* DFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFTitleLabel.swift; sourceTree = "<group>"; };
+		32A6C89525CF475B00454304 /* DFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFButton.swift; sourceTree = "<group>"; };
+		32A6C89925CF480000454304 /* DFDismissAlertPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFDismissAlertPopup.swift; sourceTree = "<group>"; };
+		32A6C89E25CF4BCD00454304 /* DFResetPasswordPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFResetPasswordPopup.swift; sourceTree = "<group>"; };
+		32A6C8A125CF4BFA00454304 /* DFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFTextField.swift; sourceTree = "<group>"; };
+		AFEE280A486138CA0A83D1C6 /* Pods_Player_Passport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Player_Passport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF9BF0106C64B4B6344ACDB6 /* Pods-Player Passport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Player Passport.release.xcconfig"; path = "Target Support Files/Pods-Player Passport/Pods-Player Passport.release.xcconfig"; sourceTree = "<group>"; };
+		D33E6820DB86EF2DE300FCF5 /* Pods-Player Passport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Player Passport.debug.xcconfig"; path = "Target Support Files/Pods-Player Passport/Pods-Player Passport.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3293CCDA25CDCFF4008A1720 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38E5F63EC155AF1AC166BC35 /* Pods_Player_Passport.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3293CCD425CDCFF4008A1720 = {
+			isa = PBXGroup;
+			children = (
+				3293CCDF25CDCFF4008A1720 /* Player Passport */,
+				3293CCDE25CDCFF4008A1720 /* Products */,
+				D7B28A626F07D1AEDD764BC1 /* Pods */,
+				C872D553BBB144731D27159C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3293CCDE25CDCFF4008A1720 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3293CCDD25CDCFF4008A1720 /* Player Passport.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3293CCDF25CDCFF4008A1720 /* Player Passport */ = {
+			isa = PBXGroup;
+			children = (
+				3293CCE625CDCFF4008A1720 /* Main.storyboard */,
+				3293CCEB25CDCFF6008A1720 /* LaunchScreen.storyboard */,
+				3293CCE025CDCFF4008A1720 /* AppDelegate.swift */,
+				3293CCE225CDCFF4008A1720 /* SceneDelegate.swift */,
+				3293CD3125CEC922008A1720 /* Fonts */,
+				3293CD2B25CEB2FA008A1720 /* Model */,
+				3293CCF825CE1838008A1720 /* CustomCells */,
+				32A6C89825CF47B800454304 /* Popups */,
+				3293CCF725CE16EC008A1720 /* ViewControllers */,
+				32A6C88D25CF465400454304 /* Extensions */,
+				32A6C87D25CF3A1200454304 /* Support */,
+				3293CCE925CDCFF6008A1720 /* Assets.xcassets */,
+				3293CCEE25CDCFF6008A1720 /* Info.plist */,
+			);
+			path = "Player Passport";
+			sourceTree = "<group>";
+		};
+		3293CCF725CE16EC008A1720 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3293CCE425CDCFF4008A1720 /* LoginViewController.swift */,
+				3293CCFA25CE19DC008A1720 /* TeamSelectionViewController.swift */,
+				3293CCFD25CE2030008A1720 /* PlayerSelectionViewController.swift */,
+				3293CD0125CE220E008A1720 /* PlayerSkillsInputViewController.swift */,
+				3293CD2D25CEC548008A1720 /* StatsDashboardViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3293CCF825CE1838008A1720 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				3293CD0425CE225A008A1720 /* PlayerCell.swift */,
+				3293CD0725CE2266008A1720 /* SkillCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		3293CD2B25CEB2FA008A1720 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3293CD2525CEB261008A1720 /* Skill.swift */,
+				3293CD2825CEB2CD008A1720 /* Player.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3293CD3125CEC922008A1720 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3293CD3525CEC938008A1720 /* VisbyRoundCF-Bold.otf */,
+				3293CD3625CEC938008A1720 /* VisbyRoundCF-DemiBold.otf */,
+				3293CD3225CEC938008A1720 /* VisbyRoundCF-ExtraBold.otf */,
+				3293CD3325CEC938008A1720 /* VisbyRoundCF-Light.otf */,
+				3293CD3425CEC938008A1720 /* VisbyRoundCF-Medium.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		32A6C87D25CF3A1200454304 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				32A6C87E25CF3A3400454304 /* DFConstants.swift */,
+				32A6C88E25CF46C400454304 /* DFBodyLabel.swift */,
+				32A6C89225CF470600454304 /* DFTitleLabel.swift */,
+				32A6C89525CF475B00454304 /* DFButton.swift */,
+				32A6C8A125CF4BFA00454304 /* DFTextField.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		32A6C88D25CF465400454304 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				32A6C88925CF464300454304 /* UIViewController+Ext.swift */,
+				3293CD0A25CE22DB008A1720 /* UIView+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		32A6C89825CF47B800454304 /* Popups */ = {
+			isa = PBXGroup;
+			children = (
+				32A6C89925CF480000454304 /* DFDismissAlertPopup.swift */,
+				32A6C89E25CF4BCD00454304 /* DFResetPasswordPopup.swift */,
+			);
+			path = Popups;
+			sourceTree = "<group>";
+		};
+		C872D553BBB144731D27159C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFEE280A486138CA0A83D1C6 /* Pods_Player_Passport.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7B28A626F07D1AEDD764BC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D33E6820DB86EF2DE300FCF5 /* Pods-Player Passport.debug.xcconfig */,
+				CF9BF0106C64B4B6344ACDB6 /* Pods-Player Passport.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3293CCDC25CDCFF4008A1720 /* Player Passport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3293CCF125CDCFF6008A1720 /* Build configuration list for PBXNativeTarget "Player Passport" */;
+			buildPhases = (
+				10000B9C790ED0D200DD42FD /* [CP] Check Pods Manifest.lock */,
+				3293CCD925CDCFF4008A1720 /* Sources */,
+				3293CCDA25CDCFF4008A1720 /* Frameworks */,
+				3293CCDB25CDCFF4008A1720 /* Resources */,
+				2AB3C7AA0EBCD1BE3E5690F9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Player Passport";
+			productName = "Player Passport";
+			productReference = 3293CCDD25CDCFF4008A1720 /* Player Passport.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3293CCD525CDCFF4008A1720 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					3293CCDC25CDCFF4008A1720 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 3293CCD825CDCFF4008A1720 /* Build configuration list for PBXProject "Player Passport" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3293CCD425CDCFF4008A1720;
+			productRefGroup = 3293CCDE25CDCFF4008A1720 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3293CCDC25CDCFF4008A1720 /* Player Passport */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3293CCDB25CDCFF4008A1720 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3293CD3A25CEC938008A1720 /* VisbyRoundCF-Bold.otf in Resources */,
+				3293CCED25CDCFF6008A1720 /* LaunchScreen.storyboard in Resources */,
+				3293CD3725CEC938008A1720 /* VisbyRoundCF-ExtraBold.otf in Resources */,
+				3293CD3B25CEC938008A1720 /* VisbyRoundCF-DemiBold.otf in Resources */,
+				3293CCEA25CDCFF6008A1720 /* Assets.xcassets in Resources */,
+				3293CD3825CEC938008A1720 /* VisbyRoundCF-Light.otf in Resources */,
+				3293CD3925CEC938008A1720 /* VisbyRoundCF-Medium.otf in Resources */,
+				3293CCE825CDCFF4008A1720 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10000B9C790ED0D200DD42FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Player Passport-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2AB3C7AA0EBCD1BE3E5690F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Player Passport/Pods-Player Passport-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Player Passport/Pods-Player Passport-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Player Passport/Pods-Player Passport-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3293CCD925CDCFF4008A1720 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3293CD2925CEB2CD008A1720 /* Player.swift in Sources */,
+				3293CD0225CE220E008A1720 /* PlayerSkillsInputViewController.swift in Sources */,
+				32A6C88A25CF464300454304 /* UIViewController+Ext.swift in Sources */,
+				3293CD0825CE2266008A1720 /* SkillCell.swift in Sources */,
+				3293CCFB25CE19DC008A1720 /* TeamSelectionViewController.swift in Sources */,
+				3293CD0525CE225A008A1720 /* PlayerCell.swift in Sources */,
+				3293CCE525CDCFF4008A1720 /* LoginViewController.swift in Sources */,
+				32A6C8A225CF4BFA00454304 /* DFTextField.swift in Sources */,
+				3293CD0B25CE22DB008A1720 /* UIView+Ext.swift in Sources */,
+				3293CCE125CDCFF4008A1720 /* AppDelegate.swift in Sources */,
+				32A6C89325CF470600454304 /* DFTitleLabel.swift in Sources */,
+				3293CD2625CEB262008A1720 /* Skill.swift in Sources */,
+				3293CCE325CDCFF4008A1720 /* SceneDelegate.swift in Sources */,
+				32A6C89F25CF4BCD00454304 /* DFResetPasswordPopup.swift in Sources */,
+				32A6C87F25CF3A3400454304 /* DFConstants.swift in Sources */,
+				3293CD2E25CEC548008A1720 /* StatsDashboardViewController.swift in Sources */,
+				32A6C88F25CF46C400454304 /* DFBodyLabel.swift in Sources */,
+				32A6C89625CF475B00454304 /* DFButton.swift in Sources */,
+				32A6C89A25CF480000454304 /* DFDismissAlertPopup.swift in Sources */,
+				3293CCFE25CE2030008A1720 /* PlayerSelectionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3293CCE625CDCFF4008A1720 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3293CCE725CDCFF4008A1720 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3293CCEB25CDCFF6008A1720 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3293CCEC25CDCFF6008A1720 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3293CCEF25CDCFF6008A1720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3293CCF025CDCFF6008A1720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3293CCF225CDCFF6008A1720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D33E6820DB86EF2DE300FCF5 /* Pods-Player Passport.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U3F68P63DU;
+				INFOPLIST_FILE = "Player Passport/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.df.Player-Passport";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		3293CCF325CDCFF6008A1720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF9BF0106C64B4B6344ACDB6 /* Pods-Player Passport.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U3F68P63DU;
+				INFOPLIST_FILE = "Player Passport/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.df.Player-Passport";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3293CCD825CDCFF4008A1720 /* Build configuration list for PBXProject "Player Passport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3293CCEF25CDCFF6008A1720 /* Debug */,
+				3293CCF025CDCFF6008A1720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3293CCF125CDCFF6008A1720 /* Build configuration list for PBXNativeTarget "Player Passport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3293CCF225CDCFF6008A1720 /* Debug */,
+				3293CCF325CDCFF6008A1720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3293CCD525CDCFF4008A1720 /* Project object */;
+}
