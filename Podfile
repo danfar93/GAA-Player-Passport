@@ -7,6 +7,4 @@ target 'Player Passport' do
 
   # Pods for Player Passport
 
-  pod 'SkyFloatingLabelTextField', '~> 3.0'
-
 end
